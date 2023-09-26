@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrabajoMovil.Calculadora"
+             BackgroundColor="Black">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0"
+               HorizontalOptions="End"
+               Margin="0,35,0,0"
+               FontSize="27"
+              x:Name="op"
+               TextColor="Gray"
+               Text="1"/>
+
+        <Entry
+            TextChanged="InputField_TextChanged"
+            x:Name="InputField"
+            Grid.Row="0"
+            HorizontalTextAlignment="End"
+            VerticalTextAlignment="End"
+            IsReadOnly="true"
+            Placeholder="0"
+            HeightRequest="150"
+           FontSize="40"
+            TextColor="#c5c5c5"
+            />
+
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button
+                Grid.Row="3"
+                Grid.Column="0"
+                Clicked="teclaPresionada"
+                Text="1" 
+                FontSize="30"
+                BackgroundColor="#000000"
+                TextColor="#cbcbcb"
+               />
+            <Button
+                Grid.Row="3"
+                Grid.Column="1"
+                Clicked="teclaPresionada"
+                Text="2" 
+                FontSize="30"
+                BackgroundColor="#000000"
+                TextColor="#cbcbcb"/>
+            <Button
+                Grid.Row="3"
+                Grid.Column="2"
+                Clicked="teclaPresionada"
+                Text="3"
+                FontSize="30"
+                BackgroundColor="#000000"
+                TextColor="#cbcbcb"/>
+
+            <Button
+                Grid.Row="2"
+                Grid.Column="0"
+                Clicked="teclaPresionada"
+                Text="4"
+                BackgroundColor="#000000"
+                TextColor="#cbcbcb"
+                FontSize="30"/>
+            <Button
+                Grid.Row="2"
+                Grid.Column="1"
+                Clicked="teclaPresionada"
+                Text="5"
+                FontSize="30"
+                 BackgroundColor="#000000"
+                TextColor="#cbcbcb"/>
+            <Button
+                Grid.Row="2"
+                Grid.Column="2"
+                Clicked="teclaPresionada"
+                Text="6" 
+                FontSize="30"
+                BackgroundColor="#000000"
+                TextColor="#cbcbcb"/>
+
+            <Button
+                Grid.Row="1"
+                Grid.Column="0"
+                Clicked="teclaPresionada"
+                Text="7" 
+                FontSize="30"
+                BackgroundColor="#000000"
+                TextColor="#cbcbcb"/>
+
+
+
+            <Button
+                Grid.Row="1"
+                Grid.Column="1"
+                Clicked="teclaPresionada"
+                Text="8" 
+                FontSize="30"
+                BackgroundColor="#000000"
+                TextColor="#cbcbcb"/>
+            <Button
+                Grid.Row="1"
+                Grid.Column="2"
+                Clicked="teclaPresionada"
+                Text="9"
+                FontSize="30"
+                BackgroundColor="#000000"
+                TextColor="#cbcbcb"/>
+
+
+            <Button
+                Grid.Row="3"
+                Grid.Column="3"
+                Clicked="teclaPresionada"
+                Text="+"
+                FontSize="30"
+                BackgroundColor="#000000"
+                TextColor="#d5774a"/>
+            <Button
+                Grid.Row="1"
+                Grid.Column="3"
+                Clicked="teclaPresionada"
+                Text="*"
+                FontSize="30"
+                BackgroundColor="#000000"
+                TextColor="#d5774a"/>
+            <Button
+                Grid.Row="0"
+                Grid.Column="3"
+                Clicked="teclaPresionada"
+                FontSize="30"
+                Text="/"
+                BackgroundColor="#000000"
+                TextColor="#d5774a"/>
+            <Button
+                Grid.Row="0"
+                Grid.Column="2"
+                Clicked="teclaPresionada"
+                FontSize="30"
+                Text="/100"
+                BackgroundColor="#000000"
+                TextColor="#d5774a"/>
+
+            <Button
+                Grid.Row="2"
+                Grid.Column="3"
+                Clicked="teclaPresionada"
+                Text="-"
+                FontSize="30"
+                BackgroundColor="#000000"
+                TextColor="#d5774a"/>
+            <Button
+                Grid.Row="0"
+                Grid.Column="0"
+                Clicked="resetear"
+                Text="C" 
+                FontSize="30"
+                BackgroundColor="#000000"
+                TextColor="#d5774a"/>
+
+
+
+            <Button
+                Grid.Row="0"
+                Grid.Column="1"
+                Clicked="borrarDigito"
+                Text="⌫"
+                FontSize="30"
+                BackgroundColor="#000000"
+                TextColor="#d5774a"/>
+
+
+            <Button
+                Grid.Row="4"
+                Grid.Column="2"
+             
+                Clicked="botonIgual"
+                Grid.ColumnSpan="2"
+                Text="=" 
+                BackgroundColor="#d5774a"
+                TextColor="Wheat"
+                
+                FontSize="30"/>
+            <Button
+                Grid.Row="4"
+                Grid.Column="1"
+                Clicked="teclaPresionada"
+                Text="." 
+                BackgroundColor="#000000"
+                TextColor="#c5c5c5"
+                FontSize="30"/>
+            <Button
+                Grid.Row="4"
+                Grid.Column="0"
+                Clicked="teclaPresionada"
+                Text="0"
+                FontSize="30"
+                BackgroundColor="#000000"
+                TextColor="#c5c5c5"/>
+
+
+
+        </Grid>
+    </Grid>
+</ContentPage>

@@ -10,17 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace TrabajoMovil
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MaestroDetalle : FlyoutPage
+    public partial class Page4 : ContentPage
     {
-        public MaestroDetalle()
+        public Page4()
         {
             InitializeComponent();
-            this.Flyout = new CollectionView();
-
-            this.Detail = new NavigationPage(new Detalle());
-           
-
-            App.flyoutPage = this;
         }
     }
 }

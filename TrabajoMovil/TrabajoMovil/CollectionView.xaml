@@ -6,10 +6,12 @@
     Title="ColllectionsMaster">
 
 
-    <CollectionView ItemsSource="{Binding products}">
+    <StackLayout >
+        <CollectionView ItemsSource="{Binding products}" SelectionMode="Single" SelectionChanged="CollectionView_SelectionChanged">
 
         <CollectionView.ItemTemplate>
             <DataTemplate>
+                
                 <FlexLayout Direction="Row">
                     <Image
                         Margin="10"
@@ -22,13 +24,16 @@
                         FontSize="Large"
                         Text="{Binding Name}" />
 
-                </FlexLayout>
+
+                        
+
+                    </FlexLayout>
             </DataTemplate>
         </CollectionView.ItemTemplate>
 
     </CollectionView>
-
-
+        <Button Text="Calculadora" Clicked="Button_Clicked"/>
+    </StackLayout>
 
 
 </ContentPage>

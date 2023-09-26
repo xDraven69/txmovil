@@ -30,13 +30,23 @@ namespace TrabajoMovil
                 Name = "Mi cuenta",
                 Icon = "perfil"
             });
-            products.Add(new Product
-            {
-                Name = "Calculadora",
-                Icon = "calculator"
-            });
+        
             this.BindingContext = this;
 
+        }
+
+
+        private void CollectionView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Product itemSeleccionado = (Product)e.CurrentSelection.FirstOrDefault();
+            App.flyoutPage.Detail.Navigation.PushAsync(new DetalleSeleccion(itemSeleccionado));
+            App.flyoutPage.IsPresented = false;
+
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Calculadora());
         }
     }
 }

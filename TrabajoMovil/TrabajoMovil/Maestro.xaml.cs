@@ -20,12 +20,12 @@ namespace TrabajoMovil
         private void Button_Clicked(object sender, EventArgs e)
         {
             App.flyoutPage.IsPresented = false;
-            App.flyoutPage.Detail.Navigation.PushAsync(new Page1());
+            App.flyoutPage.Detail.Navigation.PushAsync(new Page3());
         }
 
         private void Button_Clicked_1(object sender, EventArgs e)
         {
-            App.flyoutPage.Detail.Navigation.PushAsync(new Page2());
+            App.flyoutPage.Detail.Navigation.PushAsync(new Page4());
         }
     }
 }

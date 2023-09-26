@@ -12,7 +12,7 @@ namespace TrabajoMovil
         {
             InitializeComponent();
 
-            MainPage = new MaestroDetalle();
+            MainPage = new NavigationPage(new MaestroDetalle());
         }
 
         protected override void OnStart()
